@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daffi Al Farobi — Web Developer</title>
+<meta name="description" content="Portofolio Daffi Al Farobi, Web Developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- background blueprint grid -->
+<div class="grid-bg" aria-hidden="true"></div>
+
+<!-- side dot navigation -->
+<nav class="dot-nav" aria-label="Navigasi bagian">
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="dotList" aria-label="Buka menu navigasi">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="dotList">
+    <li><a href="#home" class="dot-link active" data-label="Home"><span class="dot"></span><span class="dot-text">Home</span></a></li>
+    <li><a href="#about" class="dot-link" data-label="About"><span class="dot"></span><span class="dot-text">About</span></a></li>
+    <li><a href="#education" class="dot-link" data-label="Education"><span class="dot"></span><span class="dot-text">Education</span></a></li>
+    <li><a href="#portfolio" class="dot-link" data-label="Portfolio"><span class="dot"></span><span class="dot-text">Portfolio</span></a></li>
+    <li><a href="#contact" class="dot-link" data-label="Contact"><span class="dot"></span><span class="dot-text">Contact</span></a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- ============ HOME ============ -->
+  <section id="home" class="sheet hero">
+    <div class="sheet-marks" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    <div class="hero-inner">
+      <h1 class="hero-name">Daffi<br>Al&nbsp;Farobi</h1>
+      <p class="hero-role">Web Developer &mdash; membangun website yang rapi dari struktur sampai tampilan.</p>
+      <p class="hero-sub">Saya senang mengubah ide menjadi website yang rapi, modern, dan nyaman digunakan di berbagai perangkat.</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">Lihat portofolio</a>
+        <a href="#contact" class="btn btn-ghost">Hubungi saya</a>
+      </div>
+    </div>
+    <div class="hero-diagram" aria-hidden="true">
+      <img src="image.png" alt="Foto Daffi Al Farobi" class="hero-photo">
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ME ============ -->
+  <section id="about" class="sheet">
+    <span class="sheet-num">02</span>
+    <div class="section-head">
+      <h2>Tentang saya</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-frame">
+        <img src="image.png" alt="Foto Daffi Al Farobi" class="photo-real">
+      </div>
+      <div class="about-text">
+        <p>Nama saya <strong>Daffi Al Farobi</strong>. Saya seorang web developer yang tertarik pada pembuatan tampilan web yang interaktif, rapi, dan responsif. Ketertarikan saya di dunia <em>web development</em> berawal dari rasa penasaran bagaimana sebuah kode program bisa diubah menjadi antarmuka visual yang bermanfaat dan mudah digunakan oleh banyak orang.</p>
+        <p>Dalam mengerjakan proyek, saya sangat memperhatikan kerapihan struktur kode, ketepatan waktu (<em>deadline</em>), serta detail pada pengalaman pengguna. Saya percaya bahwa komunikasi yang jelas dan kolaborasi yang baik dengan tim maupun klien adalah kunci utama untuk menciptakan produk digital yang berkualitas.</p>
+        <dl class="about-facts">
+          <div><dt>Lokasi</dt><dd>Purwokerto, Indonesia</dd></div>
+          <div><dt>Fokus</dt><dd>Web Development</dd></div>
+          <div><dt>Status</dt><dd>Pelajar — sedang mengembangkan kemampuan Web Development</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="sheet">
+    <span class="sheet-num">03</span>
+    <div class="section-head">
+      <h2>Pendidikan</h2>
+      <p class="section-lede">Saat ini saya masih menempuh pendidikan sambil mengembangkan kemampuan di bidang Web Development.</p>
+    </div>
+    <div class="education-entry">
+      <p class="mono-tag">Saat ini</p>
+      <h3>SMK TELKOM Purwokerto</h3>
+      <p>Saat ini saya bersekolah di SMK TELKOM Purwokerto sambil mengembangkan kemampuan Web Development melalui latihan dan proyek sederhana.</p>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section id="portfolio" class="sheet">
+    <span class="sheet-num">04</span>
+    <div class="section-head">
+      <h2>Portofolio</h2>
+      <p class="section-lede">Beberapa hal yang sudah saya kerjakan.</p>
+    </div>
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-marks" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <p class="mono-tag">01</p>
+        <h3>Undangan Pernikahan Digital</h3>
+        <p>Website undangan pernikahan interaktif dengan sampul pembuka, countdown acara, galeri foto, RSVP, dan ucapan tamu.</p>
+        <p class="project-tags">HTML · CSS · JavaScript</p>
+        <a href="undangan/index.html" class="project-link" target="_blank" rel="noopener">Lihat proyek &rarr;</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-marks" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <p class="mono-tag">02</p>
+        <h3>Langit Hari Ini</h3>
+        <p>Aplikasi cuaca sederhana untuk mencari kota dan melihat suhu, kondisi langit, kelembapan, serta kecepatan angin secara langsung.</p>
+        <p class="project-tags">HTML · CSS · JavaScript · API</p>
+        <a href="cuaca/index.html" class="project-link" target="_blank" rel="noopener">Lihat proyek &rarr;</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="sheet">
+    <span class="sheet-num">05</span>
+    <div class="section-head">
+      <h2>Hubungi saya</h2>
+      <p class="section-lede">Ada proyek atau pertanyaan? Hubungi saya langsung lewat kontak di bawah.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><span class="mono-tag">Email</span><br><a href="mailto:vonevein@gmail.com">vonevein@gmail.com</a></p>
+        <p><span class="mono-tag">Telepon / WA</span><br><a href="https://wa.me/6285641585254" target="_blank" rel="noopener">0856-4158-5254</a></p>
+        <p><span class="mono-tag">Sosial</span><br>
+          <a href="https://www.instagram.com/dapii.lmao?stkn=Mnpha2E5N3QyYzQx&amp;utm_source=qr" target="_blank" rel="noopener">Instagram : dapii.lmao</a>
+          <br><a href="https://github.com/dapi152" target="_blank" rel="noopener">GitHub : dapi152</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Daffi Al Farobi. Dibuat dengan HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

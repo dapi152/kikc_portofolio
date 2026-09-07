@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Langit Hari Ini — Aplikasi Cuaca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="weather-app">
+    <header class="topbar">
+      <a class="brand" href="../index.html">LANGIT<span>/</span>HARI INI</a>
+      <span class="status-dot">DATA LANGSUNG</span>
+    </header>
+
+    <section class="hero-copy">
+      <p class="eyebrow">Cuaca di sekitarmu</p>
+      <h1>Cek langit<br><em>hari ini.</em></h1>
+      <p class="intro">Cari kota mana saja untuk melihat kondisi cuaca terkini dengan cepat.</p>
+    </section>
+
+    <form class="search-form" id="searchForm">
+      <label class="sr-only" for="cityInput">Cari nama kota</label>
+      <input id="cityInput" type="search" placeholder="Cari kota, misalnya Purwokerto" autocomplete="off" required>
+      <button type="submit">Cari cuaca <span aria-hidden="true">&rarr;</span></button>
+    </form>
+    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+    <section class="weather-card" id="weatherCard" aria-live="polite">
+      <div class="weather-heading">
+        <div>
+          <p class="eyebrow">Lokasi terpilih</p>
+          <h2 id="placeName">Purwokerto</h2>
+          <p id="placeMeta">Indonesia</p>
+        </div>
+        <p class="weather-date" id="weatherDate">--</p>
+      </div>
+      <div class="temperature-row">
+        <div class="weather-icon" id="weatherIcon" aria-hidden="true">☀</div>
+        <div>
+          <p class="temperature"><span id="temperature">--</span><sup>°C</sup></p>
+          <p class="condition" id="condition">Memuat cuaca...</p>
+        </div>
+      </div>
+      <div class="weather-details">
+        <div><span>Kelembapan</span><strong id="humidity">--</strong></div>
+        <div><span>Angin</span><strong id="wind">--</strong></div>
+        <div><span>Terasa seperti</span><strong id="feelsLike">--</strong></div>
+      </div>
+    </section>
+
+    <footer><a href="../index.html">&larr; Kembali ke portofolio</a><span>Powered by Open-Meteo</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
